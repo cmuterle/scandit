@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-all": "ng build && npx cap copy android && npx cap open android"
   },
   "private": true,
   "dependencies": {
@@ -19,8 +20,13 @@
     "@angular/platform-browser": "~12.1.1",
     "@angular/platform-browser-dynamic": "~12.1.1",
     "@angular/router": "~12.1.1",
+    "@capacitor/android": "^2.4.7",
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7",
     "@ionic/angular": "^5.5.2",
     "rxjs": "~6.6.0",
+    "scandit-capacitor-datacapture-barcode": "^6.9.2",
+    "scandit-capacitor-datacapture-core": "^6.9.2",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
